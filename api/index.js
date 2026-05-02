@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 const NIM_API_KEY = process.env.NIM_API_KEY;
-const NIM_MODEL = process.env.NIM_MODEL || 'z-ai/glm4.7'; // 🔥 GLM-4.7!
+const NIM_MODEL = process.env.NIM_MODEL || 'z-ai/glm-5.1'; // 🔥 GLM-4.7!
 const NIM_API_BASE = 'https://integrate.api.nvidia.com/v1';
 
 // Health check
