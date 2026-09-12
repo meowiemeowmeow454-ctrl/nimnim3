@@ -6,7 +6,7 @@ app.use(cors());
 app.use(express.json());
 
 const NIM_API_KEY = process.env.NIM_API_KEY;
-const NIM_MODEL = process.env.NIM_MODEL || 'z-ai/glm-5.2'; // 🔥 GLM-4.7!
+const NIM_MODEL = process.env.NIM_MODEL || 'moonshotai/kimi-k3'; 
 const NIM_API_BASE = 'https://integrate.api.nvidia.com/v1';
 
 // Health check
@@ -24,7 +24,7 @@ app.get('/api/v1/models', (req, res) => {
   res.json({
     object: 'list',
     data: [{
-      id: 'glm-5.2',
+      id: 'kimi-k3',
       object: 'model',
       created: Date.now(),
       owned_by: 'z-ai'
